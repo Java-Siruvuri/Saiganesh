@@ -183,7 +183,7 @@ Software Developer with 7+ years building scalable apps using Spring Boot, React
             <ChevronDown className="ml-2 w-5 h-5 group-hover:translate-y-1 transition-transform" />
           </Button>
 
-          <a href="public/Resume_SaiGaneshVarma_SDE.pdf" download>
+          <a href="Resume_SaiGaneshVarma_SDE.pdf" download>
 
           <Button
             variant="outline"
