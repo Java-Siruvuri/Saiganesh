@@ -112,7 +112,37 @@
               </motion.div>
             ))}
           </motion.div>
+{/* Certification Badge */}
+<motion.div
+  initial={{ opacity: 0, y: 50 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.8, delay: 0.5 }}
+  className="mb-20 text-center"
+>
+  <h3 className="text-3xl font-poppins font-bold text-center mb-6">
+    Certification <span className="text-yellow-500">Badge</span>
+  </h3>
 
+  <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
+    <a
+      href="https://www.credly.com/badges/9bb15b40-f99d-47cc-9f68-2f31d71ec7bf"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:scale-105 transition-transform duration-300"
+    >
+      <img
+        src="/aws-certified-developer-associate.png"
+        alt="AWS Certified Developer Associate"
+        className="w-32 h-32 rounded-lg shadow-md border border-border"
+      />
+    </a>
+    <p className="text-muted-foreground max-w-xs text-sm sm:text-base">
+      <strong>AWS Certified Developer – Associate</strong><br />
+      Demonstrates validated expertise in cloud development, deployment, and debugging on AWS infrastructure.
+    </p>
+  </div>
+</motion.div>
           {/* Skills Section */}
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -203,37 +233,7 @@
     </div>
   </div>
 </motion.div>
-{/* Certification Badge */}
-<motion.div
-  initial={{ opacity: 0, y: 50 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  viewport={{ once: true }}
-  transition={{ duration: 0.8, delay: 0.5 }}
-  className="mb-20 text-center"
->
-  <h3 className="text-3xl font-poppins font-bold text-center mb-6">
-    Certification <span className="text-yellow-500">Badge</span>
-  </h3>
 
-  <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
-    <a
-      href="https://www.credly.com/badges/9bb15b40-f99d-47cc-9f68-2f31d71ec7bf"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="hover:scale-105 transition-transform duration-300"
-    >
-      <img
-        src="/aws-certified-developer-associate.png"
-        alt="AWS Certified Developer Associate"
-        className="w-32 h-32 rounded-lg shadow-md border border-border"
-      />
-    </a>
-    <p className="text-muted-foreground max-w-xs text-sm sm:text-base">
-      <strong>AWS Certified Developer – Associate</strong><br />
-      Demonstrates validated expertise in cloud development, deployment, and debugging on AWS infrastructure.
-    </p>
-  </div>
-</motion.div>
 
 
 
