@@ -41,7 +41,7 @@
       title: 'Senior Software Developer',
       company: 'Encore, Illinois',
       description:
-      'At Encore, I led the development of a real-time quality inspection and factory floor management platform using Spring Boot, React.js, and Kafka. I built dynamic dashboards with React, Redux Toolkit, and Tailwind, cutting manual reporting lag by 70% and improving QA accuracy by 30%. Backend APIs integrated with ERP systems and WebSocket-based alerts enabled faster response to sensor events. I containerized microservices via Docker and deployed them on AWS with CI/CD pipelines using GitLab CI and Jenkins. I also enforced secure access with Spring Security, IAM policies, and JWT while reducing incident resolution time using CloudWatch and ELK Stack monitoring.      ',
+      'At Encore, I development of a real-time quality inspection and factory floor management platform using Spring Boot, React.js, and Kafka. I built dynamic dashboards with React, Redux Toolkit, and Tailwind, cutting manual reporting lag and improving QA accuracy. Backend APIs integrated with ERP systems and WebSocket-based alerts enabled faster response to sensor events. I containerized microservices via Docker and deployed them on AWS with CI/CD pipelines using GitLab CI and Jenkins. I also enforced secure access with Spring Security, IAM policies, and JWT while reducing incident resolution time using CloudWatch and ELK Stack monitoring.      ',
     },
     {
       year: 'Jun 2021 - Aug 2023',
@@ -81,8 +81,8 @@
               About <span className="bg-gradient-primary bg-clip-text text-transparent">Me</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Java Full Stack Developer with 7+ years’ experience building scalable apps using Spring Boot, React.js,
-              and AWS—focused on secure APIs, responsive UIs, and real-time business solutions.
+            Software  Developer with 7+ years’ experience building scalable apps using Spring Boot, React.js,
+              Angular and AWS—focused on secure APIs, responsive UIs, and real-time business solutions.
             </p>
           </motion.div>
 

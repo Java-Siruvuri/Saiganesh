@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 import heroBg from '@/assets/hero-bg.jpg';
 
 const Hero = () => {
-  const phrases = ['Software Developer', 'Full Stack Developer'];
+  const phrases = ['Software Developer'];
   const [displayText, setDisplayText] = useState('');
   const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
 
@@ -162,7 +162,7 @@ useEffect(() => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.5 }}
           >
-Java Full Stack Developer with 7+ years building scalable apps using Spring Boot, React.js, and AWS.
+Software Developer with 7+ years building scalable apps using Spring Boot, React.js, Angular and AWS.
 
 
           </motion.p>
@@ -183,7 +183,7 @@ Java Full Stack Developer with 7+ years building scalable apps using Spring Boot
             <ChevronDown className="ml-2 w-5 h-5 group-hover:translate-y-1 transition-transform" />
           </Button>
 
-          <a href="Resume_Saiganesh.pdf" download>
+          <a href="public/Resume_SaiGaneshVarma_SDE.pdf" download>
 
           <Button
             variant="outline"
