@@ -203,6 +203,36 @@
     </div>
   </div>
 </motion.div>
+{/* Certification Badge */}
+<motion.div
+  initial={{ opacity: 0, y: 50 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.8, delay: 0.5 }}
+  className="mb-20 text-center"
+>
+  <h3 className="text-3xl font-poppins font-bold text-center mb-6">
+    Certification <span className="text-yellow-500">Badge</span>
+  </h3>
+
+  <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
+    <a
+      href="https://www.credly.com/badges/9bb15b40-f99d-47cc-9f68-2f13d71ec7bf/public_url"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:scale-105 transition-transform duration-300"
+    >
+      <img
+        src="https://images.credly.com/size/340x340/images/684f393b-2903-4b27-ae1c-5bbf2d8d6a83/image.png"
+        alt="AWS Certified Badge"
+        className="w-32 h-32 rounded-lg shadow-md border border-border"
+      />
+    </a>
+    <p className="text-muted-foreground max-w-xs text-sm sm:text-base">
+      <strong>AWS Certified</strong> – Validated expertise in building and deploying secure, scalable applications on the cloud.
+    </p>
+  </div>
+</motion.div>
 
 
           {/* Experience Timeline */}
