@@ -217,22 +217,24 @@
 
   <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
     <a
-      href="https://www.credly.com/badges/9bb15b40-f99d-47cc-9f68-2f13d71ec7bf/public_url"
+      href="https://www.credly.com/badges/9bb15b40-f99d-47cc-9f68-2f31d71ec7bf"
       target="_blank"
       rel="noopener noreferrer"
       className="hover:scale-105 transition-transform duration-300"
     >
       <img
-        src="https://images.credly.com/size/340x340/images/684f393b-2903-4b27-ae1c-5bbf2d8d6a83/image.png"
-        alt="AWS Certified Badge"
+        src="/aws-certified-developer-associate.png"
+        alt="AWS Certified Developer Associate"
         className="w-32 h-32 rounded-lg shadow-md border border-border"
       />
     </a>
     <p className="text-muted-foreground max-w-xs text-sm sm:text-base">
-      <strong>AWS Certified</strong> – Validated expertise in building and deploying secure, scalable applications on the cloud.
+      <strong>AWS Certified Developer – Associate</strong><br />
+      Demonstrates validated expertise in cloud development, deployment, and debugging on AWS infrastructure.
     </p>
   </div>
 </motion.div>
+
 
 
           {/* Experience Timeline */}
