@@ -8,7 +8,7 @@
 
   const stats = [
     { number: 12, label: 'Projects Accomplished', suffix: '+' },
-    { number: 7, label: 'Years Experience', suffix: '+' },
+    { number: 6, label: 'Years Experience', suffix: '+' },
     { number: 95, label: 'Production Uptime', suffix: '%' },
     { number: 20, label: 'Tech Stack Tools', suffix: '+' },
   ];
