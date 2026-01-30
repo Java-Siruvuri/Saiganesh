@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 import heroBg from '@/assets/hero-bg.jpg';
 
 const Hero = () => {
-  const phrases = ['Software Developer' | AI & Scalable Systems'];
+  const phrases = ['Software Developer' | 'AI & Scalable Systems'];
   const [displayText, setDisplayText] = useState('');
   const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
 
