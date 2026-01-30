@@ -100,7 +100,7 @@ const contactInfo = [
   {
     icon: MapPin,
     label: 'Location',
-    value: 'Chicago',
+    value: 'New Jersey, USA',
     href: '#',
   },
 ];
