@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 import heroBg from '@/assets/hero-bg.jpg';
 
 const Hero = () => {
-  const phrases = ['Software Developer'];
+  const phrases = ['Software Developer' | AI & Scalable Systems'];
   const [displayText, setDisplayText] = useState('');
   const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
 
@@ -162,8 +162,8 @@ useEffect(() => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.5 }}
           >
-Software Developer with 7+ years building scalable apps using Spring Boot, React.js, Angular and AWS.
-
+Full-Stack Software Developer with 6+ years of experience building scalable, cloud-native applications using Spring Boot, React.js, Angular, and AWS.
+Strong expertise in integrating Claude AI to deliver intelligent, context-aware features across frontend and backend systems.
 
           </motion.p>
         </motion.div>
