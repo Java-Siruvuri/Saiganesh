@@ -1,7 +1,7 @@
   import { useEffect, useRef } from 'react';
   import { motion } from 'framer-motion';
   import CountUp from 'react-countup';
- import { Globe, Database, Code2, Settings, Smartphone, Server, Terminal, GitBranch, Box, Layers, CheckSquare, BarChart2, GitCommit, Send, HardDrive, LayoutDashboard } from 'lucide-react';
+ import { Globe,Brain, Database, Code2, Settings, Smartphone, Server, Terminal, GitBranch, Box, Layers, CheckSquare, BarChart2, GitCommit, Send, HardDrive, LayoutDashboard } from 'lucide-react';
 
   const About = () => {
     const ref = useRef<HTMLDivElement>(null);
@@ -17,7 +17,7 @@
    const skills = [
   { name: 'Frontend (React.js, Tailwind)', percentage: 90, icon: Globe },
   { name: 'Backend (Java, Spring Boot)', percentage: 95, icon: Database },
-  {name: 'AI Integration & GenAI (Claude AI, LLM APIs, Prompt Design)', percentage: 90, icon: Globe },   
+  {name: 'AI Integration & GenAI (Claude AI, LLM APIs, Prompt Design)', percentage: 90, icon: Brain },   
   { name: 'Cloud & DevOps (AWS, Docker)', percentage: 85, icon: Code2 },
   { name: 'Microservices & Kafka', percentage: 88, icon: Settings },
   { name: 'WebSockets & Real-time Systems', percentage: 82, icon: Smartphone },
