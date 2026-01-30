@@ -17,6 +17,7 @@
    const skills = [
   { name: 'Frontend (React.js, Tailwind)', percentage: 90, icon: Globe },
   { name: 'Backend (Java, Spring Boot)', percentage: 95, icon: Database },
+  {name: 'AI Integration & GenAI (Claude AI, LLM APIs, Prompt Design)', percentage: 90, icon: Globe },   
   { name: 'Cloud & DevOps (AWS, Docker)', percentage: 85, icon: Code2 },
   { name: 'Microservices & Kafka', percentage: 88, icon: Settings },
   { name: 'WebSockets & Real-time Systems', percentage: 82, icon: Smartphone },
@@ -36,8 +37,15 @@
 
 
     const experiences = [
+      {
+      year: 'Oct 2025 - Present',
+      title: 'Senior Software Developer',
+      company: 'Prudential, Newark',
+      description:
+      'At Prudential, I integrated Claude AI into the platform to enable intelligent, context-aware interactions and automated insights. I designed and built custom reusable UI components using React.js, which were configurable and updatable through Adobe Experience Manager (AEM) by developing Design System (DS) components for consistent reuse across applications. I implemented custom React hooks for seamless API integrations and state handling, and developed interactive chat interfaces with rich illustrations, ensuring an intuitive user experience. I managed global application state using Redux and Context Store, enabling efficient data flow, session persistence, and real-time updates across AI-driven workflows. I optimized backend services with Spring Boot, enhancing performance and scalability to support AI workloads. Additionally, I ensured robust security measures by implementing OAuth2 and JWT for secure authentication and authorization across AI features.',
+    },    
     {
-      year: 'Feb 2024 - Present',
+      year: 'Feb 2024 - Sep 2025',
       title: 'Senior Software Developer',
       company: 'Encore, Illinois',
       description:
@@ -81,8 +89,7 @@
               About <span className="bg-gradient-primary bg-clip-text text-transparent">Me</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Software  Developer with 7+ years’ experience building scalable apps using Spring Boot, React.js,
-              Angular and AWS—focused on secure APIs, responsive UIs, and real-time business solutions.
+             Software Developer with 6+ years’ experience building scalable, AI-enabled applications using Spring Boot, React.js, Angular, and AWS—focused on integrating Claude AI, secure APIs, responsive UIs, and real-time business solutions.
             </p>
           </motion.div>
 
