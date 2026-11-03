@@ -47,7 +47,7 @@
     {
       year: 'Feb 2024 - Sep 2025',
       title: 'Senior Software Developer',
-      company: 'Encore, Illinois',
+      company: ', Illinois',
       description:
       'At Encore, I development of a real-time quality inspection and factory floor management platform using Spring Boot, React.js, and Kafka. I built dynamic dashboards with React, Redux Toolkit, and Tailwind, cutting manual reporting lag and improving QA accuracy. Backend APIs integrated with ERP systems and WebSocket-based alerts enabled faster response to sensor events. I containerized microservices via Docker and deployed them on AWS with CI/CD pipelines using GitLab CI and Jenkins. I also enforced secure access with Spring Security, IAM policies, and JWT while reducing incident resolution time using CloudWatch and ELK Stack monitoring.      ',
     },
