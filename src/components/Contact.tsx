@@ -124,6 +124,13 @@ const contactInfo = [
 
         </motion.div>
 
+        <div className="mb-10 flex flex-wrap justify-center gap-3">
+          <a href="https://www.linkedin.com/in/siruvurig" target="_blank" rel="noopener noreferrer" className="rounded-lg border border-border px-5 py-3 text-primary hover:bg-primary/10">LinkedIn</a>
+          <a href="https://github.com/Java-Siruvuri" target="_blank" rel="noopener noreferrer" className="rounded-lg border border-border px-5 py-3 text-primary hover:bg-primary/10">GitHub</a>
+          <a href="mailto:siruvuri.sgv@gmail.com" className="rounded-lg border border-border px-5 py-3 text-primary hover:bg-primary/10">Email</a>
+          <a href="/Resume_SaiGaneshVarma_SDE.pdf" download className="rounded-lg border border-border px-5 py-3 text-primary hover:bg-primary/10">Download resume</a>
+        </div>
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Form */}
           <motion.div

@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 import heroBg from '@/assets/hero-bg.jpg';
 
 const Hero = () => {
-  const phrases = ['Software Developer | AI & Scalable Systems'];
+  const phrases = ['Full Stack Software Engineer', 'Architecting Scalable Systems', 'Building Intelligent Experiences'];
   const [displayText, setDisplayText] = useState('');
   const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
 
@@ -134,14 +134,14 @@ useEffect(() => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
           >
-            Hello, I'm Sai Ganesh Varma Siruvuri
+            Hello, I'm Sai Ganesh Varma 
           </motion.h1>
 
           {/* <div className="h-16 flex items-center justify-center"> */}
           <div className="min-h-[4rem] md:min-h-[6rem] flex items-center justify-center text-center px-2">
 
             {/* <h2 className="text-4xl md:text-6xl lg:text-7xl font-poppins font-bold bg-gradient-primary bg-clip-text text-transparent"> */}
-              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-poppins font-bold bg-gradient-primary bg-clip-text text-transparent leading-tight break-words">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-poppins font-bold bg-gradient-primary bg-clip-text text-transparent leading-normal pb-[0.15em] break-words">
 
               {displayText}
               <motion.span
@@ -162,8 +162,7 @@ useEffect(() => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.5 }}
           >
-Full-Stack Software Developer with 6+ years of experience building scalable, cloud-native applications using Spring Boot, React.js, Angular, and AWS.
-Strong expertise in integrating Claude AI to deliver intelligent, context-aware features across frontend and backend systems.
+I transform complex business challenges into scalable, high-performance digital solutions through full-stack engineering, modern system architecture, and AI-driven innovation.
 
           </motion.p>
         </motion.div>

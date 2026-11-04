@@ -1,38 +1,49 @@
-  import { useEffect, useRef } from 'react';
   import { motion } from 'framer-motion';
   import CountUp from 'react-countup';
- import { Globe,Brain, Database, Code2, Settings, Smartphone, Server, Terminal, GitBranch, Box, Layers, CheckSquare, BarChart2, GitCommit, Send, HardDrive, LayoutDashboard } from 'lucide-react';
+ import { Globe, Brain, Database, Code2, Layers, CheckSquare } from 'lucide-react';
 
-  const About = () => {
-    const ref = useRef<HTMLDivElement>(null);
+
 
   const stats = [
-    { number: 12, label: 'Projects Accomplished', suffix: '+' },
+    { number: 17, label: 'Projects Accomplished', suffix: '+' },
     { number: 6, label: 'Years Experience', suffix: '+' },
     { number: 95, label: 'Production Uptime', suffix: '%' },
     { number: 20, label: 'Tech Stack Tools', suffix: '+' },
   ];
 
 
-   const skills = [
-  { name: 'Frontend (React.js, Tailwind)', percentage: 90, icon: Globe },
-  { name: 'Backend (Java, Spring Boot)', percentage: 95, icon: Database },
-  {name: 'AI Integration & GenAI (Claude AI, LLM APIs, Prompt Design)', percentage: 90, icon: Brain },   
-  { name: 'Cloud & DevOps (AWS, Docker)', percentage: 85, icon: Code2 },
-  { name: 'Microservices & Kafka', percentage: 88, icon: Settings },
-  { name: 'WebSockets & Real-time Systems', percentage: 82, icon: Smartphone },
-  { name: 'Security & Auth (Spring Security, JWT, RBAC)', percentage: 84, icon: Server },
-  { name: 'Database Optimization (PostgreSQL, Redis, HikariCP)', percentage: 80, icon: Terminal },
-  { name: 'CI/CD & Automation (GitLab CI, Jenkins, Maven)', percentage: 87, icon: GitBranch },
-  { name: 'Containerization & Orchestration (Docker, Kubernetes)', percentage: 85, icon: Box },
-  { name: 'API Development (RESTful APIs, GraphQL)', percentage: 92, icon: Layers },
-  { name: 'Testing & Quality (JUnit, Mockito, Selenium)', percentage: 89, icon: CheckSquare },
-  { name: 'Logging & Monitoring (ELK Stack, Prometheus, Grafana)', percentage: 86, icon: BarChart2 },
-  { name: 'State Management (Redux Toolkit, React Hooks)', percentage: 91, icon: GitCommit },
-  { name: 'Messaging & Streaming (Apache Kafka, RabbitMQ)', percentage: 88, icon: Send },
-  { name: 'Infrastructure as Code (Terraform)', percentage: 80, icon: HardDrive },
-  { name: 'Project Management & SDLC (Agile, JIRA, Confluence)', percentage: 85, icon: LayoutDashboard }
-];
+  const skills = [
+    {
+      name: 'Architecture & distributed systems', icon: Layers,
+      description: 'Design modular services, event-driven workflows, and secure APIs for enterprise applications.',
+      technologies: ['Java', 'Spring Boot', 'Microservices', 'Kafka', 'RabbitMQ', 'REST', 'GraphQL', 'WebSockets'],
+    },
+    {
+      name: 'Frontend & experience engineering', icon: Globe,
+      description: 'Build reusable component systems and responsive interfaces with predictable application state.',
+      technologies: ['React.js', 'AEM', 'Redux Toolkit', 'React Hooks', 'Context API', 'Tailwind CSS'],
+    },
+    {
+      name: 'Generative AI integration', icon: Brain,
+      description: 'Integrate context-aware conversations and AI workflows into enterprise customer experiences.',
+      technologies: ['Claude AI', 'LLM APIs', 'Prompt design', 'AI orchestration'],
+    },
+    {
+      name: 'Cloud & delivery automation', icon: Code2,
+      description: 'Deliver containerized applications with repeatable infrastructure and automated release pipelines.',
+      technologies: ['AWS', 'Docker', 'Kubernetes', 'Terraform', 'GitLab CI', 'Jenkins', 'Maven'],
+    },
+    {
+      name: 'Security, data & reliability', icon: Database,
+      description: 'Secure service access, optimize data performance, and make production behavior observable.',
+      technologies: ['Spring Security', 'OAuth 2.0', 'JWT', 'RBAC', 'PostgreSQL', 'Redis', 'HikariCP', 'ELK', 'CloudWatch', 'Prometheus', 'Grafana'],
+    },
+    {
+      name: 'Engineering quality & delivery', icon: CheckSquare,
+      description: 'Support maintainable releases through automated testing, reusable engineering patterns, and structured delivery practices.',
+      technologies: ['JUnit', 'Mockito', 'Selenium', 'Agile', 'JIRA', 'Confluence'],
+    },
+  ];
 
 
 
@@ -42,42 +53,42 @@
       title: 'Senior Software Developer',
       company: 'Prudential, Newark',
       description:
-      'At Prudential, I integrated Claude AI into the platform to enable intelligent, context-aware interactions and automated insights. I designed and built custom reusable UI components using React.js, which were configurable and updatable through Adobe Experience Manager (AEM) by developing Design System (DS) components for consistent reuse across applications. I implemented custom React hooks for seamless API integrations and state handling, and developed interactive chat interfaces with rich illustrations, ensuring an intuitive user experience. I managed global application state using Redux and Context Store, enabling efficient data flow, session persistence, and real-time updates across AI-driven workflows. I optimized backend services with Spring Boot, enhancing performance and scalability to support AI workloads. Additionally, I ensured robust security measures by implementing OAuth2 and JWT for secure authentication and authorization across AI features.',
-    },    
+      'At Prudential, I designed and developed scalable, enterprise-grade applications by integrating Claude AI to enable intelligent, context-aware interactions and automated insights. I architected reusable, configurable React.js components and integrated them with Adobe Experience Manager (AEM) through custom Design System components, ensuring consistency and maintainability across applications. I developed AI-powered conversational interfaces, implemented custom React hooks for seamless API integrations, and leveraged Redux and React Context API for efficient state management, session persistence, and real-time updates. Additionally, I optimized Spring Boot microservices to enhance backend performance, reliability, and scalability while implementing secure authentication and authorization using OAuth 2.0 and JWT. My contributions focused on delivering secure, high-performance, and user-centric digital experiences by combining Generative AI, modern frontend architecture, and robust backend engineering.',
+    },
     {
       year: 'Feb 2024 - Sep 2025',
       title: 'Senior Software Developer',
-      company: ', Illinois',
+      company: 'Encore, Illinois',
       description:
-      'At Encore, I development of a real-time quality inspection and factory floor management platform using Spring Boot, React.js, and Kafka. I built dynamic dashboards with React, Redux Toolkit, and Tailwind, cutting manual reporting lag and improving QA accuracy. Backend APIs integrated with ERP systems and WebSocket-based alerts enabled faster response to sensor events. I containerized microservices via Docker and deployed them on AWS with CI/CD pipelines using GitLab CI and Jenkins. I also enforced secure access with Spring Security, IAM policies, and JWT while reducing incident resolution time using CloudWatch and ELK Stack monitoring.      ',
+      'AAt Encore, I engineered a real-time quality inspection and factory floor management platform using Spring Boot, React.js, and Apache Kafka, enabling efficient manufacturing operations and data-driven decision-making. I designed and developed interactive dashboards with React, Redux Toolkit, and Tailwind CSS, streamlining reporting workflows and improving quality assurance efficiency. I architected scalable backend APIs integrated with ERP systems and implemented WebSocket-based real-time alerts to accelerate responses to critical sensor events. I containerized microservices using Docker, deployed cloud-native solutions on AWS, and automated build and deployment workflows through GitLab CI and Jenkins. Additionally, I strengthened application security using Spring Security, AWS IAM, and JWT, while leveraging Amazon CloudWatch and the ELK Stack to enhance system observability, streamline troubleshooting, and reduce incident resolution time.',
     },
     {
       year: 'Jun 2021 - Aug 2023',
       title: 'Software Developer',
       company: 'EVCO Plastics, Wisconsin',
       description:
-      'At EVCO Plastics, I built a cloud-native manufacturing execution system using React.js, Spring Boot, Kafka, and WebSockets to digitize floor-level QA workflows. I developed React dashboards with real-time data visualizations, integrated Kafka-driven alerts, and boosted QA accuracy using dynamic validations. On the backend, I created REST APIs with Spring Boot and secured them using JWT and role-based access. PostgreSQL optimization and HikariCP helped reduce API response times. I containerized services with Docker and automated deployments using GitLab CI and Jenkins, significantly improving release cycles. Cloud observability was enhanced with ELK Stack and CloudWatch for faster error resolution.',
+      'At EVCO Plastics, I took end-to-end technical ownership of developing a cloud-native Manufacturing Execution System (MES), driving architectural design, full-stack implementation, and deployment using React.js, Spring Boot, Apache Kafka, and WebSockets. I designed scalable, event-driven backend services and real-time dashboards to modernize shop-floor quality assurance, automate validation workflows, and improve operational visibility. I established secure API architecture using Spring Security, JWT, and role-based access control (RBAC), while optimizing PostgreSQL queries and HikariCP connection pooling to enhance application performance. I owned microservice containerization with Docker, streamlined CI/CD workflows using GitLab CI and Jenkins, and strengthened production reliability through Amazon CloudWatch and the ELK Stack. Throughout the project, I collaborated with cross-functional teams to translate complex manufacturing requirements into maintainable, high-performance solutions, driving improvements in QA efficiency, deployment consistency, and incident resolution.',
     },
     {
       year: 'Nov 2019 - May 2021',
       title: 'Software Developer',
       company: 'Independent Bank, Michigan',
       description:
-      'Modernized a digital banking system by building responsive, cross-platform UIs using React.js and Bootstrap, resulting in a 40% increase in session duration. Designed backend services with Spring Boot for real-time transaction visibility and integrated Kafka producers with WebSocket listeners to enable instant fraud detection. Leveraged Redis caching to optimize high-frequency API response times during peak usage. Strengthened backend security using JWT and Spring Security for robust access control. Automated deployment pipelines with Jenkins, Git, and Maven, ensuring smooth CI/CD workflows. Enhanced observability and compliance by integrating ELK Stack monitoring and securing multi-environment deployment processes.',
+      'I played a key role in modernizing an enterprise digital banking platform, taking ownership of full-stack development, backend service optimization, and secure system integrations. I designed and developed responsive, cross-platform user interfaces using React.js and Bootstrap, contributing to a 40% increase in user session duration. I engineered scalable Spring Boot microservices to enable real-time transaction visibility and implemented event-driven processing using Apache Kafka and WebSockets to support instant fraud detection and alerts. I optimized high-frequency API performance through Redis caching, ensuring efficient data retrieval during peak transaction loads. I strengthened application security by implementing Spring Security, JWT authentication, and role-based access controls to protect sensitive financial data. Additionally, I streamlined CI/CD pipelines using Jenkins, Git, and Maven, ensuring reliable deployments across multiple environments. I enhanced system observability and operational reliability through ELK Stack monitoring while collaborating with cross-functional teams to deliver secure, scalable, and high-performance banking solutions.',
     },
     {
       year: 'Oct 2018 - Oct 2019',
       title: 'Software Engineer',
       company: 'Kinara Capital, Bengaluru',
       description:
-      'Developed a scalable digital lending solution tailored for micro-entrepreneurs, streamlining loan processing through secure, responsive React.js interfaces. Designed onboarding forms with Formik and validation logic to reduce rejection rates and improve data accuracy. Built real-time dashboards to track disbursals and KPIs, aiding branch-level decision-making. Integrated Aadhaar and PAN APIs into Spring Boot microservices, automating KYC checks and boosting daily applicant throughput by 40%. Enhanced backend performance through MongoDB aggregation optimizations. Enforced secure access with OAuth2, JWT, and Spring Security. Containerized the full stack with Docker and deployed via GitLab CI/CD, ensuring high availability during regional demand surges.',
+      'I contributed to the development of a scalable digital lending platform for micro-entrepreneurs, gaining hands-on experience in full-stack development, backend integrations, and application performance optimization. I developed responsive React.js interfaces with Formik-based onboarding forms and validation mechanisms to improve data accuracy and streamline loan processing. I built interactive dashboards to track loan disbursements and key performance indicators, supporting branch-level decision-making. On the backend, I developed RESTful APIs using Spring Boot and integrated Aadhaar and PAN verification services to automate KYC workflows, contributing to a 40% increase in daily applicant throughput. I optimized MongoDB aggregation queries to improve application performance and implemented secure authentication and authorization using OAuth 2.0, JWT, and Spring Security. I also worked with Docker and GitLab CI/CD pipelines to support containerized deployments and application reliability. Throughout the project, I collaborated with senior developers and cross-functional teams, strengthening my expertise in enterprise application development, secure API design, and scalable software engineering practices',
     },
   ];
 
 
-    return (
-      <section id="about" className="py-5 relative overflow-hidden">
-        <div className="container mx-auto px-6">
+export const About = () => (
+  <section id="about" className="py-10 scroll-mt-24 relative overflow-hidden">
+    <div className="container mx-auto px-6">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -89,7 +100,8 @@
               About <span className="bg-gradient-primary bg-clip-text text-transparent">Me</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-             Software Developer with 6+ years’ experience building scalable, AI-enabled applications using Spring Boot, React.js, Angular, and AWS—focused on integrating Claude AI, secure APIs, responsive UIs, and real-time business solutions.
+            I'm a Full Stack Software Engineer with 6+ years of experience designing, developing, and delivering enterprise-grade applications across diverse projects. I specialize in Java, Spring Boot, React.js, Angular, AWS, and microservices architecture, with expertise in building secure RESTful APIs, scalable backend systems, and responsive user interfaces.
+            I've collaborated with cross-functional teams to translate complex business requirements into reliable, production-ready solutions. My experience also includes Generative AI integration with Claude AI, cloud-native development, system design, and performance optimization, with a strong focus on clean architecture, maintainability, and engineering best practices.
             </p>
           </motion.div>
 
@@ -119,83 +131,107 @@
               </motion.div>
             ))}
           </motion.div>
-{/* Certification Badge */}
-<motion.div
-  initial={{ opacity: 0, y: 50 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  viewport={{ once: true }}
-  transition={{ duration: 0.8, delay: 0.5 }}
-  className="mb-20 text-center"
->
-  <h3 className="text-3xl font-poppins font-bold text-center mb-6">
-    Certification <span className="text-yellow-500">Badge</span>
-  </h3>
 
-  <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
-    <a
-      href="https://www.credly.com/badges/9bb15b40-f99d-47cc-9f68-2f31d71ec7bf"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="hover:scale-105 transition-transform duration-300"
-    >
-      <img
-        src="/aws-certified-developer-associate.png"
-        alt="AWS Certified Developer Associate"
-        className="w-32 h-32 rounded-lg shadow-md border border-border"
-      />
-    </a>
-    <p className="text-muted-foreground max-w-xs text-sm sm:text-base">
-      <strong>AWS Certified Developer – Associate</strong><br />
-      Demonstrates validated expertise in cloud development, deployment, and debugging on AWS infrastructure.
-    </p>
-  </div>
-</motion.div>
-          {/* Skills Section */}
+    </div>
+  </section>
+);
+
+export const TechnicalSkills = () => (
+  <section id="skills" className="py-10 scroll-mt-24 relative overflow-hidden">
+    <div className="container mx-auto px-6">
+          {/* Engineering capabilities */}
+          <section aria-labelledby="engineering-heading" className="mx-auto mb-20 max-w-6xl">
+            <div className="mb-8 max-w-2xl">
+              <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-secondary">Technical expertise</p>
+              <h3 id="engineering-heading" className="mb-4 text-3xl md:text-4xl font-poppins font-bold tracking-tight">
+                Technical <span className="text-secondary">Skills</span>
+              </h3>
+              <p className="text-base leading-relaxed text-muted-foreground">
+                From system design to production delivery: building secure, maintainable platforms across enterprise AI, manufacturing, and financial services.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {skills.map((skill, index) => (
+                <motion.article
+                  key={skill.name}
+                  initial={{ opacity: 0, y: 16 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.35, delay: index * 0.04 }}
+                  className="flex flex-col rounded-2xl border border-[#263345] bg-[#141619] p-6 transition-colors hover:border-secondary/50"
+                >
+                  <div className="mb-5 flex items-center justify-between">
+                    <div className="rounded-lg border border-secondary/20 bg-secondary/10 p-2.5 text-secondary">
+                      <skill.icon className="h-5 w-5" aria-hidden="true" />
+                    </div>
+                    <span className="text-xs font-mono text-slate-500">0{index + 1}</span>
+                  </div>
+                  <h4 className="mb-3 text-lg font-semibold leading-snug text-slate-100">{skill.name}</h4>
+                  <p className="mb-5 text-sm leading-relaxed text-slate-400">{skill.description}</p>
+                  <ul className="mt-auto flex flex-wrap gap-2 border-t border-[#263345] pt-4" aria-label={`${skill.name} technologies`}>
+                    {skill.technologies.map(technology => (
+                      <li key={technology} className="rounded-md border border-slate-700/60 bg-slate-800/40 px-2.5 py-1 text-xs leading-relaxed text-slate-300">{technology}</li>
+                    ))}
+                  </ul>
+                </motion.article>
+              ))}
+            </div>
+          </section>
+
+
+    </div>
+  </section>
+);
+
+export const ProfessionalExperience = () => (
+  <section id="experience" className="py-10 scroll-mt-24 relative overflow-hidden">
+    <div className="container mx-auto px-6">
+          {/* Experience Timeline */}
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="mb-20"
+            transition={{ duration: 0.8, delay: 0.6 }}
           >
             <h3 className="text-3xl font-poppins font-bold text-center mb-12">
-              Technical <span className="text-secondary">Skills</span>
+              Professional <span className="text-accent">Experience</span>
             </h3>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {skills.map((skill, index) => (
+            <div className="relative">
+              <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-primary"></div>
+              
+              {experiences.map((exp, index) => (
                 <motion.div
-                  key={skill.name}
-                  initial={{ opacity: 0, x: -50 }}
+                  key={index}
+                  initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                  className="p-6 rounded-xl bg-card border border-border hover:shadow-glow-secondary transition-all duration-300 group"
+                  transition={{ duration: 0.6, delay: index * 0.2 }}
+                  className={`relative flex items-center mb-12 ${
+                    index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'
+                  }`}
                 >
-                  <div className="flex items-center mb-4">
-                    <div className="p-3 rounded-lg bg-gradient-primary mr-4 group-hover:scale-110 transition-transform">
-                      <skill.icon className="w-6 h-6 text-primary-foreground" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-foreground">{skill.name}</h4>
-                      <p className="text-muted-foreground">{skill.percentage}%</p>
+                  <div className={`w-1/2 ${index % 2 === 0 ? 'pr-8' : 'pl-8'}`}>
+                    <div className="p-6 rounded-xl bg-card border border-border hover:shadow-glow-accent transition-all duration-300 hover-bounce">
+                      <span className="text-sm font-semibold text-accent">{exp.year}</span>
+                      <h4 className="text-xl font-bold text-foreground mb-1">{exp.title}</h4>
+                      <p className="text-primary font-medium mb-3">{exp.company}</p>
+                      <p className="text-muted-foreground">{exp.description}</p>
                     </div>
                   </div>
                   
-                  <div className="w-full bg-muted rounded-full h-3 overflow-hidden">
-                    <motion.div
-                      initial={{ width: 0 }}
-                      whileInView={{ width: `${skill.percentage}%` }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 1.5, delay: 0.5 + index * 0.1 }}
-                      className="h-full bg-gradient-primary rounded-full"
-                    />
-                  </div>
+                  <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-gradient-primary rounded-full border-4 border-background"></div>
                 </motion.div>
               ))}
             </div>
           </motion.div>
+    </div>
+  </section>
+);
 
+export const EducationCertifications = () => (
+  <section id="education" className="py-10 scroll-mt-24 relative overflow-hidden">
+    <div className="container mx-auto px-6">
           {/* Education Section */}
 <motion.div
   initial={{ opacity: 0, y: 50 }}
@@ -205,7 +241,7 @@
   className="mb-20"
 >
   <h3 className="text-3xl font-poppins font-bold text-center mb-12">
-    Education <span className="text-primary">Background</span>
+    Education <span className="text-primary">& Certifications</span>
   </h3>
 
   <div className="space-y-8 max-w-full mx-auto">
@@ -244,48 +280,40 @@
 
 
 
-          {/* Experience Timeline */}
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-          >
-            <h3 className="text-3xl font-poppins font-bold text-center mb-12">
-              Professional <span className="text-accent">Journey</span>
-            </h3>
-            
-            <div className="relative">
-              <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-primary"></div>
-              
-              {experiences.map((exp, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: index * 0.2 }}
-                  className={`relative flex items-center mb-12 ${
-                    index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'
-                  }`}
-                >
-                  <div className={`w-1/2 ${index % 2 === 0 ? 'pr-8' : 'pl-8'}`}>
-                    <div className="p-6 rounded-xl bg-card border border-border hover:shadow-glow-accent transition-all duration-300 hover-bounce">
-                      <span className="text-sm font-semibold text-accent">{exp.year}</span>
-                      <h4 className="text-xl font-bold text-foreground mb-1">{exp.title}</h4>
-                      <p className="text-primary font-medium mb-3">{exp.company}</p>
-                      <p className="text-muted-foreground">{exp.description}</p>
-                    </div>
-                  </div>
-                  
-                  <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-gradient-primary rounded-full border-4 border-background"></div>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-        </div>
-      </section>
-    );
-  };
+{/* Certification Badge */}
+<motion.div
+  initial={{ opacity: 0, y: 50 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.8, delay: 0.5 }}
+  className="mb-20 text-center"
+>
+  <h3 className="text-3xl font-poppins font-bold text-center mb-6">
+    Certification <span className="text-yellow-500">Badge</span>
+  </h3>
 
-  export default About;
+  <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
+    <a
+      href="https://www.credly.com/badges/9bb15b40-f99d-47cc-9f68-2f31d71ec7bf"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:scale-105 transition-transform duration-300"
+    >
+      <img
+        src="/aws-certified-developer-associate.png"
+        alt="AWS Certified Developer Associate"
+        className="w-32 h-32 rounded-lg shadow-md border border-border"
+      />
+    </a>
+    <p className="text-muted-foreground max-w-xs text-sm sm:text-base">
+      <strong>AWS Certified Developer – Associate</strong><br />
+      Demonstrates validated expertise in cloud development, deployment, and debugging on AWS infrastructure.
+    </p>
+  </div>
+</motion.div>
+
+    </div>
+  </section>
+);
+
+export default About;

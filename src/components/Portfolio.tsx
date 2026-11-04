@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import LoadingScreen from './LoadingScreen';
 import Header from './Header';
 import Hero from './Hero';
-import About from './About';
+import About, { TechnicalSkills, ProfessionalExperience, EducationCertifications } from './About';
 import Projects from './Projects';
 // import Testimonials from './Testimonials';
 import Contact from './Contact';
@@ -42,7 +42,10 @@ const Portfolio = () => {
         <main className="relative">
           <Hero />
           <About />
+          <TechnicalSkills />
+          <ProfessionalExperience />
           <Projects />
+          <EducationCertifications />
           {/* <Testimonials /> */}
           <Contact />
         </main>
