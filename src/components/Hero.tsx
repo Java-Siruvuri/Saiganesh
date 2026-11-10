@@ -44,8 +44,8 @@ useEffect(() => {
 
   const socialLinks = [
     { icon: Github, href: 'https://github.com/Java-Siruvuri', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://www.linkedin.com/in/siruvurig', label: 'LinkedIn' },
-    { icon: Mail, href: '#contact', label: 'Email' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/varma009/', label: 'LinkedIn' },
+    { icon: Mail, href: 'mailto:ganeshvarma.sgv@gmail.com', label: 'Email' },
   ];
 
   return (

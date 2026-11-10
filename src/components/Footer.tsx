@@ -11,12 +11,12 @@ const Footer = () => {
   },
   {
     icon: Linkedin,
-    href: 'https://www.linkedin.com/in/siruvurig',
+    href: 'https://www.linkedin.com/in/varma009/',
     label: 'LinkedIn',
   },
   {
     icon: Mail,
-    href: 'mailto:siruvuri.sgv@gmail.com',
+    href: 'mailto:ganeshvarma.sgv@gmail.com',
     label: 'Email',
   },
 ];

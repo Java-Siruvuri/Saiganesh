@@ -88,14 +88,14 @@ const contactInfo = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'siruvuri.sgv@gmail.com',
-    href: 'mailto:siruvuri.sgv@gmail.com',
+    value: 'ganeshvarma.sgv@gmail.com',
+    href: 'mailto:ganeshvarma.sgv@gmail.com',
   },
   {
     icon: Phone,
     label: 'Phone',
-    value: '+1 312-854 9293',
-    href: 'tel:+1312-854 9293',
+    value: '779-212-4901',
+    href: 'tel:+17792124901',
   },
   {
     icon: MapPin,
@@ -125,9 +125,9 @@ const contactInfo = [
         </motion.div>
 
         <div className="mb-10 flex flex-wrap justify-center gap-3">
-          <a href="https://www.linkedin.com/in/siruvurig" target="_blank" rel="noopener noreferrer" className="rounded-lg border border-border px-5 py-3 text-primary hover:bg-primary/10">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/varma009/" target="_blank" rel="noopener noreferrer" className="rounded-lg border border-border px-5 py-3 text-primary hover:bg-primary/10">LinkedIn</a>
           <a href="https://github.com/Java-Siruvuri" target="_blank" rel="noopener noreferrer" className="rounded-lg border border-border px-5 py-3 text-primary hover:bg-primary/10">GitHub</a>
-          <a href="mailto:siruvuri.sgv@gmail.com" className="rounded-lg border border-border px-5 py-3 text-primary hover:bg-primary/10">Email</a>
+          <a href="mailto:ganeshvarma.sgv@gmail.com" className="rounded-lg border border-border px-5 py-3 text-primary hover:bg-primary/10">Email</a>
           <a href="/Resume_SaiGaneshVarma_SDE.pdf" download className="rounded-lg border border-border px-5 py-3 text-primary hover:bg-primary/10">Download resume</a>
         </div>
 
